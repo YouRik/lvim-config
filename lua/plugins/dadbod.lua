@@ -5,7 +5,8 @@ return {
     { "<leader>Du", "<cmd>DBUIToggle<CR>", desc = "Toggle DBUI" },
     { "<leader>Df", "<cmd>DBUIFindBuffer<CR>", desc = "Attach buffer to database" },
     { "<leader>De", "<Plug>(DBUI_EditBindParameters)", desc = "Edit query bind parameters" },
-    { "<leader>Dr", "<Plug>(DBUI_ExecuteQuery)", desc = "Execute file as database query", mode = { "n", "v" } },
+    { "<leader>Dr", "<Plug>(DBUI_ExecuteQuery)", desc = "Execute file as database query" },
+    { "<leader>Dr", "<Plug>(DBUI_ExecuteQuery)", desc = "Execute selected database query", mode = { "v" } },
   },
 
   init = function()
