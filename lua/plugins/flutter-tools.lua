@@ -1,6 +1,9 @@
 return {
   "nvim-flutter/flutter-tools.nvim",
   lazy = false,
+  dependencies = {
+    "nvim-lua/plenary.nvim",
+  },
   keys = {
     { "<leader>F", desc = "Flutter" },
     { "<leader>Fq", "<cmd>FlutterQuit<CR>", desc = "Quit Flutter app" },
@@ -36,12 +39,12 @@ return {
       -- variables list.
       -- Invoking toString() has a performance cost and may introduce side-effects,
       -- although users may expected this functionality. null is treated like false.
+      -- evaluate_to_string_in_debug_views = true,
+      -- You can use the `debugger.register_configurations` to register custom runner configuration (for example for different targets or flavor). Plugin automatically registers the default configuration, but you can override it or add new ones.
       -- register_configurations = function(paths)
-      -- require('dap').configurations.dart = {
-      -- put here config that you would find in .vscode/launch.json
-      -- }
-      -- If you want to load .vscode launch.json automatically run the following:
-      -- require("dap.ext.vscode").load_launchjs()
+      --   require("dap").configurations.dart = {
+      --     -- your custom configuration
+      --   }
       -- end,
     },
     widget_guides = {
@@ -56,7 +59,7 @@ return {
       enabled = true, -- set to false to disable
     },
     dev_log = {
-      enabled = false,
+      enabled = true,
       filter = nil, -- optional callback to filter the log
       -- takes a log_line as string argument; returns a boolean or nil;
       -- the log_line is only added to the output if the function returns true
@@ -66,7 +69,7 @@ return {
     },
     dev_tools = {
       autostart = true, -- autostart devtools server if not detected
-      auto_open_browser = false, -- Automatically opens devtools in the browser
+      auto_open_browser = true, -- Automatically opens devtools in the browser
     },
     outline = {
       open_cmd = "30vnew", -- command to use to open the outline buffer
