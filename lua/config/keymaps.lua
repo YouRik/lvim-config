@@ -26,8 +26,8 @@ vim.keymap.del("n", "<Leader><Tab><Tab>")
 vim.keymap.del("n", "<Leader>uA")
 
 -- disable terminal keymaps
-vim.keymap.del("n", "<Leader>fT")
-vim.keymap.del("n", "<Leader>ft")
-vim.keymap.del("n", "<C-/>")
-vim.keymap.del("t", "<C-/>")
-vim.keymap.del("n", "<C-_>")
+-- vim.keymap.del("n", "<Leader>fT")
+-- vim.keymap.del("n", "<Leader>ft")
+-- vim.keymap.del("n", "<C-/>")
+-- vim.keymap.del("t", "<C-/>")
+-- vim.keymap.del("n", "<C-_>")
