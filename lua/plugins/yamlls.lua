@@ -8,9 +8,12 @@ return {
         settings = {
           yaml = {
             customTags = {
+              "!Equals",
+              "!If",
               "!Ref",
               "!Sub",
               "!GetAtt",
+              "!FindInMap",
             },
           },
         },
