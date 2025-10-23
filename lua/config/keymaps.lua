@@ -16,14 +16,14 @@ map("n", "<Leader><S-P>e", [[:let @*=expand("%:e")<CR>]], { desc = "Copy file ex
 map("n", "<Leader><S-P>s", [[:let @*=expand("%:t")<CR>]], { desc = "Copy short path", silent = true })
 
 -- disable tabs
--- vim.keymap.del("n", "<Leader><Tab>[")
--- vim.keymap.del("n", "<Leader><Tab>]")
--- vim.keymap.del("n", "<Leader><Tab>f")
--- vim.keymap.del("n", "<Leader><Tab>l")
--- vim.keymap.del("n", "<Leader><Tab>d")
--- vim.keymap.del("n", "<Leader><Tab>o")
--- vim.keymap.del("n", "<Leader><Tab><Tab>")
--- vim.keymap.del("n", "<Leader>uA")
+vim.keymap.del("n", "<Leader><Tab>[")
+vim.keymap.del("n", "<Leader><Tab>]")
+vim.keymap.del("n", "<Leader><Tab>f")
+vim.keymap.del("n", "<Leader><Tab>l")
+vim.keymap.del("n", "<Leader><Tab>d")
+vim.keymap.del("n", "<Leader><Tab>o")
+vim.keymap.del("n", "<Leader><Tab><Tab>")
+vim.keymap.del("n", "<Leader>uA")
 
 -- disable terminal keymaps
 -- vim.keymap.del("n", "<Leader>fT")
