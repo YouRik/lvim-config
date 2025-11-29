@@ -15,17 +15,17 @@ return {
     vim.g.db_ui_execute_on_save = false
   end,
 
-  config = function()
-    vim.api.nvim_create_autocmd("BufEnter", {
-      pattern = "*.sql",
-      callback = function()
-        for _, buf in ipairs(vim.api.nvim_list_bufs()) do
-          if vim.api.nvim_buf_get_name(buf):match("dbui") then
-            vim.cmd("DBUIFindBuffer")
-            break
-          end
-        end
-      end,
-    })
-  end,
+  -- config = function()
+  --   vim.api.nvim_create_autocmd("BufEnter", {
+  --     pattern = "*.sql",
+  --     callback = function()
+  --       for _, buf in ipairs(vim.api.nvim_list_bufs()) do
+  --         if vim.api.nvim_buf_get_name(buf):match("dbui") then
+  --           vim.cmd("DBUIFindBuffer")
+  --           break
+  --         end
+  --       end
+  --     end,
+  --   })
+  -- end,
 }
