@@ -8,3 +8,4 @@ vim.opt.breakindentopt = "shift:2"
 vim.opt.colorcolumn = { 81, 101, 121 }
 vim.opt.scrolloff = 10
 vim.opt.listchars = "nbsp:␣,tab:» ,trail:·"
+vim.g.snacks_animate = false
