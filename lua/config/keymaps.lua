@@ -31,3 +31,12 @@ vim.keymap.del("n", "<Leader>uA")
 -- vim.keymap.del("n", "<C-/>")
 -- vim.keymap.del("t", "<C-/>")
 -- vim.keymap.del("n", "<C-_>")
+
+-- Exit Insert Mode using 'jk'
+vim.keymap.set("i", "jk", "<Esc>", { desc = "Exit Insert Mode" })
+
+-- Exit Terminal Mode using 'jk'
+vim.keymap.set("t", "jk", [[<C-\><C-n>]], { desc = "Exit Terminal Mode" })
+
+-- Exit Visual Mode using 'jk'
+vim.keymap.set("v", "jk", "<Esc>", { desc = "Exit Visual Mode" })
